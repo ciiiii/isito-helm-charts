@@ -43,7 +43,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: WATCH_NAMESPACE
-              value: {{ .Values.istioNamespace | quote }}
+              value: {{ .Values.watchNamespace | quote }}
             - name: LEADER_ELECTION_NAMESPACE
               value: {{ .Release.Namespace | quote }}
             - name: POD_NAME

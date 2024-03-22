@@ -68,6 +68,7 @@ affinity: {}
 waitForResourcesTimeout: 300s
 
 istioNamespace: istio-system
+watchNamespace: istio-system
 
 controlPlane:
   install: false
